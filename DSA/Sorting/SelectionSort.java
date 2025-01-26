@@ -1,15 +1,13 @@
 package Sorting;
 
-//In Selection sort first we assume that at 0th index element is smallest and then 
+import java.util.Arrays;
+
+//In Selection sort first we assume that at 0th index element is smallest and then
 //we check with the next element for smaller that that if we found that next element is smallest 
 //then we make that element smallest and store it the first index. 
 public class SelectionSort {
 
-    public static void printArray(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
+
 
     public static void main(String[] args) {
 
@@ -28,6 +26,6 @@ public class SelectionSort {
             array[i] = temp;
         }
 
-        printArray(array);
+        System.out.println(Arrays.toString(array));
     }
 }

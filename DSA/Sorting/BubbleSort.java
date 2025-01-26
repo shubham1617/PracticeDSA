@@ -1,16 +1,12 @@
 package Sorting;
 
-public class BubbleSort {
+import java.util.Arrays;
 
-    public static void printArray(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
+public class BubbleSort {
 
     public static void main(String[] args) {
 
-        int array[] = { 7, 88, 5, 6, 42, 99 };
+        int array[] = { -20,7, 88, 5, 6, 42, 99,0 };
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
@@ -21,6 +17,9 @@ public class BubbleSort {
                 }
             }
         }
-        printArray(array);
+        System.out.println(Arrays.toString(array));
     }
+
+
+
 }
